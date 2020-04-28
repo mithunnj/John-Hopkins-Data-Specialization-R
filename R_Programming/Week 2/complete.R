@@ -6,8 +6,6 @@ complete <- function(directory, id = 1:332, t_check = FALSE, threshold = 0) {
   ## to be used
   
   ## Return a data frame 
-  
-  print(directory) #DEBUG
 
   files_dir <- list.files(path = directory) # Import all the files from the given directory
   obs_dataframe <- data.frame(matrix(ncol=2, nrow=0)) # Dataframe to store number of observed cases
