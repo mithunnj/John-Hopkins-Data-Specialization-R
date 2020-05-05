@@ -33,6 +33,9 @@ best <- function(state, outcome) {
   for(i in 1:nrow(hospital_outcome)) {
     row <- hospital_outcome[i,] # Retrieve the hospital name and mortality rate columns given a row
 
+    # row[1] - contains the names of the hospitals
+    # row [2] - contains the mortality rate of the specified outcome for that hospital
+    
     if (is.null(lowest_val)) { # If the lowest mortality rate hasn't been determined, store that information and the corresponding hospital name
       lowest_val <- row[2]
       hospital_return <- c(row[1])
