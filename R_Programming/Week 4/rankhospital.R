@@ -3,7 +3,7 @@ rankhospital <- function(state, outcome, num = "best") {
   ## param: state <chr> - Two letter abbreviation of the state
   ## param: outcome <chr> - Health outcome (ex. heart attack, heart failure, pneumonia)
   ## param: num <int/chr> - Rank of the hospital to return
-  ## return: 
+  ## return: char vector containing a list of hospitals with that ranked mortality rate
   ##################################################
   
   rank <- NULL
